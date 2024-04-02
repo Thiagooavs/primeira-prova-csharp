@@ -12,7 +12,7 @@ namespace prova_csharp
     {
         static void Main(string[] args)
         {
-
+            //Cadastro para os cursos da minha escola EX
             string resp = "S";        
             int esc = 0;
             int ds = 0;
