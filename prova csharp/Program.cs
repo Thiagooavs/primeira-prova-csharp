@@ -24,15 +24,16 @@ namespace prova_csharp
             {
                 string erro = "S";
                 while (erro == "S")
-                {                  
-                  Console.WriteLine("Essolha um curso para se matricular: ");
-                  Console.WriteLine("1 - Desenvolvimento de Sistemas (o melhor) ");
-                  Console.WriteLine("2 - Edificação ");
-                  Console.WriteLine("3 - Administração ");
-                  Console.WriteLine("4 - Mecatrônica ");
-                  Console.WriteLine("Escolha: ");
-                  esc = int.Parse(Console.ReadLine());
-
+                {    
+                   Console.Clear();
+                    Console.WriteLine("Essolha um curso para se matricular: ");
+                    Console.WriteLine("1 - Desenvolvimento de Sistemas (o melhor) ");
+                    Console.WriteLine("2 - Edificação ");
+                    Console.WriteLine("3 - Administração ");
+                    Console.WriteLine("4 - Mecatrônica ");
+                    Console.WriteLine("Escolha: ");
+                    esc = int.Parse(Console.ReadLine());
+                    
                     switch (esc)
                     {
                         case 1:
@@ -95,15 +96,18 @@ namespace prova_csharp
                         default:
                             Console.WriteLine("Curso inexistente, tente novamente.");
                             Console.ReadKey();
+                            
                             break;
                     }
+                    
                 }
-
+                
                 Console.WriteLine("Cadastrar mais um aluno (s/n)?");               
-                resp = Console.ReadLine().ToUpper();               
+                resp = Console.ReadLine().ToUpper();  
+                Console.Clear();             
             }
 
-            Console.WriteLine("Número de alunos matriculado ( max = 5):");
+            Console.WriteLine("Número de alunos matriculados em cada curso ( max = 5):");
             Console.WriteLine("1 - Desenvolvimento de Sistemas: " + ds);
             Console.WriteLine("2 - Edificação " + ed);
             Console.WriteLine("3 - Administração " + ad);
